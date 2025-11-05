@@ -4,5 +4,12 @@ import express from "express";
 const bookRoutes = express.Router();
 
 bookRoutes.get('/all', BookController.fetchBooks);
-
+bookRoutes.post('/new', BookController.createBook);
+bookRoutes.put('/edit/:bookId', BookController.editBook);
+bookRoutes.delete('/delete/:bookId', BookController.deleteBook);
 export default bookRoutes;
+
+/*
+localhost: 5000/book/edit/4
+localhost: 5000/book/delete/5
+*/
