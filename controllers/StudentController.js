@@ -14,9 +14,6 @@ export const fetchStudent = async (req, res) => {
     }
 }
 
-
-
-
 export const createStudent = async (req, res) =>{
     const {srcode, name, course} = req.body;
     try{
