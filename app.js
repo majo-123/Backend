@@ -20,8 +20,6 @@ app.use((req, res, next) =>{
     next();
 })
 
-
-
 try{
 app.listen(process.env.PORT || 3000,() =>{
     console.log(`Listening to port ${process.env.PORT || 3000} ...`)
